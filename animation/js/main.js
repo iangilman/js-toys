@@ -1,4 +1,4 @@
-/*globals Modernizr, jsToys */
+/*globals Modernizr, jsToys, requestAnimationFrame */
 
 // Copyright 2011-12, Ian Gilman
 // Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
