@@ -1,0 +1,16 @@
+body {
+  width: 800px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+a,
+a:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #333;
+}
