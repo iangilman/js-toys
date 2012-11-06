@@ -37,9 +37,11 @@
       context.lineJoin = 'round';
       context.beginPath();
       context.moveTo(this.points[0].x, this.points[0].y);
-      for (i = 1; i < this.points.length; i++) 
+      
+      for (i = 1; i < this.points.length; i++) {
         context.lineTo(this.points[i].x, this.points[i].y);
-        
+      }
+      
       context.stroke();      
 
       // update positions and handle bounce
