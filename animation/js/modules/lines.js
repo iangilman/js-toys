@@ -1,11 +1,12 @@
 /*globals jsToys */
+/*jshint white:false */
 
 // Copyright 2011-12, Ian Gilman
 // Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
 
 (function() {
 
-  jsToys.animations['flying-lines'] = {
+  jsToys.modules.lines = {
     maxVelocity: 10,
     pointsToMake: 7,
     points: [],
@@ -31,7 +32,7 @@
       context.fillRect(0, 0, windowSize.x, windowSize.y);
 
       // draw the lines
-      context.strokeStyle = '#088';
+      context.strokeStyle = '#a60';
       context.lineWidth = 6;
       context.lineCap = 'round';
       context.lineJoin = 'round';

@@ -4,13 +4,14 @@ Pull this repository down to your hard drive and open index.html into your brows
 
 # To do
 
-* Way to pick animations
-* Auto load animation scripts
+* Smarter load (don't load if already loaded, destroy old one, etc.)
+* Destroy method for modules
+* Instructions here for how to add new modules
 
 # Animation ideas
 
-* Water drops
 * Fireworks
 * Wobbly text
 * Warp drive
 * Snow falling
+* Flying toasters
