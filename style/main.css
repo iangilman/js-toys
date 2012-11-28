@@ -6,11 +6,26 @@ body {
 
 a,
 a:visited {
-  color: #666;
+  color: #08f;
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: #333;
+  color: #2af;
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.note {
+  margin-top: 40px;
+  font-size: 11px;
+  color: #888;
 }

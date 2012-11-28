@@ -75,6 +75,7 @@
     // ----------
     loadModule: function(name) {
       var self = this;
+      this.modules = {};  
       $.getScript('js/modules/' + name + '.js', function() {
         self.currentModule = self.modules[name];
         self.currentModule.init(self.windowSize);
