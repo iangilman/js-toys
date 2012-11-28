@@ -5,7 +5,15 @@
 1. Refresh the browser. 
 1. Rinse, repeat.
 
-These animations use the HTML5 canvas. Here's a cheatsheet: http://simon.html5.org/dump/html5-canvas-cheat-sheet.html
+These animations use the HTML5 canvas. Here's a cheatsheet: 
+
+* http://simon.html5.org/dump/html5-canvas-cheat-sheet.html
+
+... and here are some tutorials:
+
+* http://www.html5canvastutorials.com/tutorials/html5-canvas-tutorials-introduction/
+* http://diveintohtml5.info/canvas.html
+* https://developer.mozilla.org/en-US/docs/Canvas_tutorial/Drawing_shapes
 
 # Adding modules
 
@@ -19,11 +27,6 @@ This project is set up so it's easy to add new modules. To do so:
 1. Open index.html in your browser and use the menu in the upper-left of the page to select your module for viewing.
 
 Once you have a module in a state you like, send me a pull request, or email the code to ian@iangilman.com, and I'll add it to this repository!
-
-# To do
-
-* Smarter load (don't load if already loaded, destroy old one, etc.)
-* Destroy method for modules
 
 # Animation ideas
 
