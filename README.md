@@ -1,6 +1,6 @@
 # JS Toys
 
-Some fun JavaScript projects for folks to hack on.
+Some fun JavaScript projects for folks to hack on. So far there's just the one:
 
 * [Animation](https://github.com/iangilman/js-toys/tree/master/animation)
 
