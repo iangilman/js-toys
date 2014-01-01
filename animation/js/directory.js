@@ -7,7 +7,8 @@
 
   jsToys.directory = [
     'lines',
-    'drops'
+    'drops',
+    'mutation'
   ];
 
 })();
