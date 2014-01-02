@@ -24,18 +24,31 @@
       this.$canvas = $('#main');
       this.context = this.$canvas[0].getContext('2d');
       
-      $(window).resize(function() {
-        self.resize();
-      });
+      $(window)
+        .resize(function() {
+          self.resize();
+        })
+        .bind('hashchange', function() {
+          var value = location.hash.replace(/^#/, '');  
+          self.loadModule(value);
+        });
       
       var $modules = $('#modules')
         .change(function() {
-          self.loadModule($modules.val());
+          var value = $modules.val();
+          location.hash = value;
+          self.loadModule(value);
         });
         
+      var startModuleIndex = 0;
+      var hash = location.hash.replace(/^#/, '');
       var entry;
       for (var i = 0; i < this.directory.length; i++) {
         entry = this.directory[i];
+        if (entry === hash) {
+          startModuleIndex = i;
+        }
+
         $('<option>')
           .attr('value', entry)
           .text(entry)
@@ -44,7 +57,10 @@
             
       this.resize();
       this.frame();
-      this.loadModule(this.directory[0]);
+
+      entry = this.directory[startModuleIndex];
+      $modules.val(entry);
+      this.loadModule(entry);
     },
     
     // ----------
