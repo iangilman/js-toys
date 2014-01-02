@@ -7,7 +7,7 @@
 
   jsToys.modules.MODULE_NAME_GOES_HERE = {
     // ----------
-    init: function(windowSize) {
+    init: function(windowSize, context) {
     },
     
     // ----------
@@ -15,7 +15,7 @@
     },
     
     // ----------
-    resize: function(windowSize) {
+    resize: function(windowSize, context) {
     }
   };
 

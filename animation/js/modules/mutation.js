@@ -7,7 +7,7 @@
 
   jsToys.modules.mutation = {
     // ----------
-    init: function(windowSize) {
+    init: function(windowSize, context) {
       this.grid = {};
       this.grid['0x0'] = {
         body: {
@@ -163,7 +163,7 @@
     },
     
     // ----------
-    resize: function(windowSize) {
+    resize: function(windowSize, context) {
     }
   };
 

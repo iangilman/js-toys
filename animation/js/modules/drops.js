@@ -9,7 +9,7 @@
     drops: [],
     
     // ----------
-    init: function(windowSize) {
+    init: function(windowSize, context) {
     },
     
     // ----------
@@ -48,7 +48,7 @@
     },
     
     // ----------
-    resize: function(windowSize) {
+    resize: function(windowSize, context) {
     }
   };
 

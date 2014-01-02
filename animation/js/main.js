@@ -71,7 +71,7 @@
       this.$canvas.attr('height', this.windowSize.y);
       
       if (this.currentModule) {
-        this.currentModule.resize(this.windowSize);
+        this.currentModule.resize(this.windowSize, this.context);
       }
     },
 
@@ -94,7 +94,7 @@
       this.modules = {};  
       $.getScript('js/modules/' + name + '.js', function() {
         self.currentModule = self.modules[name];
-        self.currentModule.init(self.windowSize);
+        self.currentModule.init(self.windowSize, self.context);
       });
     }
   };

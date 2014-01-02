@@ -11,7 +11,7 @@
     points: [],
     
     // ----------
-    init: function(windowSize) {
+    init: function(windowSize, context) {
       for (var i = 0; i < this.pointsToMake; i++) {
         this.points.push({
           x: Math.random() * windowSize.x, 
@@ -69,7 +69,7 @@
     },
     
     // ----------
-    resize: function(windowSize) {
+    resize: function(windowSize, context) {
     }
   };
 
