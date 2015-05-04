@@ -11,7 +11,9 @@ These animations use the HTML5 canvas. Here's a cheatsheet:
 
 ... and here are some tutorials:
 
+* http://www.html5canvastutorials.com/tutorials/html5-canvas-element/
 * http://diveintohtml5.info/canvas.html
+* https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial
 
 # Adding modules
 
