@@ -20,6 +20,12 @@
         alert('This browser does not support the canvas tag.');
         return;
       }
+      
+      this.urlParams = {};
+      location.search.replace(/^\?/, '').split('&').forEach(function(v, i) {
+        var parts = v.split('=');
+        self.urlParams[parts[0]] = parts[1];
+      });
     
       this.$canvas = $('#main');
       this.context = this.$canvas[0].getContext('2d');
@@ -29,7 +35,7 @@
           self.resize();
         })
         .bind('hashchange', function() {
-          var value = location.hash.replace(/^#/, '');  
+          var value = location.hash.replace(/^#/, '');
           self.loadModule(value);
         });
       
@@ -39,6 +45,10 @@
           location.hash = value;
           self.loadModule(value);
         });
+        
+      if (this.urlParams.ui === '0') {
+        $modules.hide();
+      }
         
       var startModuleIndex = 0;
       var hash = location.hash.replace(/^#/, '');
@@ -53,7 +63,7 @@
           .attr('value', entry)
           .text(entry)
           .appendTo($modules);
-      }        
+      }
             
       this.resize();
       this.frame();
@@ -91,7 +101,7 @@
     // ----------
     loadModule: function(name) {
       var self = this;
-      this.modules = {};  
+      this.modules = {};
       $.getScript('js/modules/' + name + '.js', function() {
         self.currentModule = self.modules[name];
         self.currentModule.init(self.windowSize, self.context);
